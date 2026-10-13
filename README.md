@@ -1,7 +1,10 @@
-# foPDF — downloads
+# ViewtifulPDF — downloads
 
-Builds distribuíveis do **foPDF**, um leitor de PDF para Android que se
-registra como handler de PDF do sistema operacional.
+Builds distribuíveis do **ViewtifulPDF**, um leitor de PDF para Android que
+se registra como handler de PDF do sistema operacional.
+
+> Nas versões até a 1.3.0 o app se chamava **foPDF**. O id do pacote Android
+> segue `br.com.fopdf`, então atualizar substitui a instalação existente.
 
 Este repositório contém **apenas os binários**. O código-fonte é mantido
 separadamente.
@@ -31,9 +34,18 @@ armazenamento: usa o Storage Access Framework, que concede acesso por arquivo.
 
 Três formas de abrir um PDF:
 
-- tocar em um PDF em qualquer app e escolher o foPDF em "Abrir com";
-- compartilhar um PDF de outro app para o foPDF;
+- tocar em um PDF em qualquer app e escolher o ViewtifulPDF em "Abrir com";
+- compartilhar um PDF de outro app para o ViewtifulPDF;
 - o botão "Abrir PDF" dentro do app, que chama o seletor de arquivos nativo.
+
+## Também disponível
+
+- Zoom por pinça e duplo toque.
+- Seleção e cópia de texto.
+- Busca no documento, com destaque e navegação entre as ocorrências.
+- Links do PDF: internos navegam, externos abrem no navegador do sistema.
+- PDFs protegidos por senha.
+- Compartilhar o documento, ou baixar uma cópia.
 
 ## Limitações
 
@@ -47,5 +59,5 @@ Três formas de abrir um PDF:
 Cada release publica o SHA-256 do APK. Para conferir:
 
 ```bash
-sha256sum fopdf-1.0.0-debug.apk
+sha256sum viewtifulpdf-1.4.0-debug.apk
 ```
