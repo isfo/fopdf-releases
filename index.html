@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViewtifulPDF</title>
+<meta name="description" content="Leitor de PDF para Android: abre o arquivo e sai da frente. Sem conta, sem anúncios e sem pedir acesso aos seus arquivos.">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#ffffff; --fg:#1b1d21; --dim:#5d6572; --rule:#e3e6ea; --accent:#e23b30; --card:#f7f8fa; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#121316; --fg:#f2f3f5; --dim:#9ea5b1; --rule:#32363e; --card:#1c1e23; }
+  }
+  :root[data-theme="dark"] { --bg:#121316; --fg:#f2f3f5; --dim:#9ea5b1; --rule:#32363e; --card:#1c1e23; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); padding:0 16px;
+         font:16px/1.65 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; }
+  main { max-width:46rem; margin:0 auto; padding:64px 0 80px; }
+  .hero { display:flex; gap:24px; align-items:center; flex-wrap:wrap; }
+  .hero img { width:112px; height:112px; border-radius:24%; flex:none;
+              box-shadow:0 10px 28px rgb(0 0 0 / .28); }
+  h1 { font-size:2.3rem; line-height:1.1; margin:0; letter-spacing:-.02em; }
+  .tag { color:var(--dim); margin:8px 0 0; font-size:1.05rem; }
+  .cta { display:inline-block; margin:30px 0 0; background:var(--accent); color:#fff;
+         text-decoration:none; font-weight:650; padding:14px 26px; border-radius:999px; }
+  .cta:hover { filter:brightness(1.08); }
+  .note { color:var(--dim); font-size:.9rem; margin-top:12px; }
+  h2 { font-size:1.15rem; margin:44px 0 10px; color:var(--accent); }
+  ul { padding-left:1.25rem; } li { margin-bottom:6px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-top:14px; }
+  .card { background:var(--card); border:1px solid var(--rule); border-radius:12px; padding:14px 16px; }
+  .card h3 { margin:0 0 4px; font-size:1rem; }
+  .card p { margin:0; color:var(--dim); font-size:.93rem; }
+  footer { border-top:1px solid var(--rule); margin-top:52px; padding-top:18px;
+           color:var(--dim); font-size:.9rem; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon.png" alt="">
+    <div>
+      <h1>ViewtifulPDF</h1>
+      <p class="tag">Um leitor de PDF para Android que abre o arquivo e sai da frente.</p>
+    </div>
+  </div>
+
+  <a class="cta" href="../../releases/latest">Baixar o APK</a>
+  <p class="note">Android 7.0 ou mais recente. O download não exige conta.</p>
+
+  <h2>O que ele faz</h2>
+  <div class="grid">
+    <div class="card"><h3>Abre de qualquer lugar</h3><p>Registra-se como leitor de PDF do sistema: toque em um arquivo em qualquer app.</p></div>
+    <div class="card"><h3>Rolagem contínua</h3><p>Desenha só as páginas perto da tela, então documentos longos rolam liso.</p></div>
+    <div class="card"><h3>Zoom por gestos</h3><p>Pinça ancorada entre os dedos e duplo toque para alternar a aproximação.</p></div>
+    <div class="card"><h3>Busca e seleção</h3><p>Texto é texto: dá para copiar, e a busca destaca todas as ocorrências.</p></div>
+    <div class="card"><h3>Documentos com senha</h3><p>Pede a senha antes de abrir; ela não é gravada em lugar nenhum.</p></div>
+    <div class="card"><h3>Compartilhar e baixar</h3><p>Entrega o documento a outro app, ou grava uma cópia onde você escolher.</p></div>
+  </div>
+
+  <h2>O que ele não faz</h2>
+  <ul>
+    <li>Não cria conta e não exibe anúncios.</li>
+    <li>Não pede permissão de acesso aos seus arquivos — quem escolhe o arquivo é o seletor do Android.</li>
+    <li>Não coleta dados e não envia nada para servidor nenhum.</li>
+    <li>Não edita: nada de anotações, assinatura ou preenchimento de formulário.</li>
+  </ul>
+
+  <footer>
+    <p>Software livre sob licença MIT ·
+    <a href="privacidade.html">Política de privacidade</a></p>
+  </footer>
+</main>
+</body>
+</html>

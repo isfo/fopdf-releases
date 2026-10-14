@@ -1,7 +1,9 @@
 # ViewtifulPDF — downloads
 
-Builds distribuíveis do **ViewtifulPDF**, um leitor de PDF para Android que
-se registra como handler de PDF do sistema operacional.
+Builds distribuíveis do **ViewtifulPDF**, um leitor de PDF para Android que se
+registra como handler de PDF do sistema operacional.
+
+Página do projeto: **https://isfo.github.io/fopdf-releases/**
 
 > Nas versões até a 1.3.0 o app se chamava **foPDF**. O id do pacote Android
 > segue `br.com.fopdf`, então atualizar substitui a instalação existente.
@@ -15,8 +17,9 @@ A versão mais recente está em **[Releases](../../releases/latest)**.
 
 ## Instalação
 
-Os APKs publicados aqui são builds de **debug**, assinados com a chave de
-debug do Android — não com uma chave de distribuição. Para instalar:
+A partir da 1.5.0 os APKs são **assinados com chave de distribuição**, e uma
+versão atualiza a anterior sem desinstalar. (Da 1.4.1 para trás eram builds de
+debug; para sair de uma delas é preciso desinstalar antes.)
 
 1. Baixe o `.apk` no aparelho.
 2. Autorize a instalação de apps de fontes desconhecidas quando o Android
@@ -38,26 +41,46 @@ Três formas de abrir um PDF:
 - compartilhar um PDF de outro app para o ViewtifulPDF;
 - o botão "Abrir PDF" dentro do app, que chama o seletor de arquivos nativo.
 
-## Também disponível
+E, com o documento aberto:
 
-- Zoom por pinça e duplo toque.
-- Seleção e cópia de texto.
-- Busca no documento, com destaque e navegação entre as ocorrências.
-- Links do PDF: internos navegam, externos abrem no navegador do sistema.
-- PDFs protegidos por senha.
-- Compartilhar o documento, ou baixar uma cópia.
+- rolagem contínua, com renderização em janela;
+- zoom por pinça e duplo toque, ancorado no ponto tocado;
+- seleção e cópia de texto;
+- busca no documento, com destaque de todas as ocorrências e navegação entre elas;
+- links do PDF: internos navegam no documento, externos abrem no navegador;
+- PDFs protegidos por senha;
+- compartilhar o documento aberto, ou baixar uma cópia.
 
 ## Limitações
 
 - Teto de 64 MB por arquivo.
-- PDFs protegidos por senha não abrem.
-- Sem seleção de texto, busca ou anotações: o conteúdo é rasterizado.
+- Não edita: sem anotações, assinatura ou preenchimento de formulário.
 - Apenas Android.
+
+## Privacidade
+
+Nenhum dado é coletado. Veja a
+[política de privacidade](https://isfo.github.io/fopdf-releases/privacidade.html).
 
 ## Verificando o download
 
-Cada release publica o SHA-256 do APK. Para conferir:
+```bash
+sha256sum viewtifulpdf-1.6.0-release.apk
+```
+
+A impressão digital do certificado de assinatura, igual em todas as versões a
+partir da 1.5.0:
+
+```
+SHA-256: 15:B4:21:B4:DD:F8:E0:88:07:2A:F3:EA:54:43:45:17:F8:6D:E0:28:12:09:E8:27:81:C1:40:03:1A:24:E1:FD
+```
+
+Para conferir no APK baixado:
 
 ```bash
-sha256sum viewtifulpdf-1.4.0-debug.apk
+apksigner verify --print-certs viewtifulpdf-1.6.0-release.apk
 ```
+
+## Licença
+
+MIT.
